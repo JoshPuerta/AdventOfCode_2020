@@ -14,7 +14,7 @@ def bag_map_builder(fname: str) -> dict:
     return rule_map
 
 
-def pathfinder(bagmap: dict, start, target) -> list:
+def pathfinder(bagmap: dict, start: str, target: str) -> list:
     # A not-so-fine breadth-first search algorithm
     q = [start]
     while q:
@@ -28,7 +28,7 @@ def pathfinder(bagmap: dict, start, target) -> list:
                 q.append(nbor)
 
 
-def unroller(bagmap: dict, start):
+def unroller(bagmap: dict, start: str) -> int:
     acc = 0
     for nbor in bagmap[start]:
         if nbor == 'other':
