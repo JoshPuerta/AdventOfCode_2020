@@ -48,4 +48,3 @@ if __name__ == '__main__':
               f'Sum: {expense_a + expense_b + expense_c} '
               f'Result: {expense_a * expense_b * expense_c}')
 
-    # Part B
