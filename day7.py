@@ -48,8 +48,8 @@ if __name__ == '__main__':
     for key in bags.keys():
         if path := pathfinder(bags, key, 'shiny gold'):
             found += 1
-            print(f'\t{key:15}\tPath:\t{path}')
+            print(f'\t{key:20}\tPath:\t{path}')
     print(f'\tFound: {found}')
 
     unrolled = unroller(bags, 'shiny gold')
-    print(f'Part 2 -> shiny gold\tBags:\t{unrolled}')
+    print(f'Part 2 -> shiny gold bags: {unrolled}')
