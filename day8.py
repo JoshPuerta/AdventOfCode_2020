@@ -70,7 +70,6 @@ if __name__ == '__main__':
         op_from, op_to = mod
         modified_instr, accum = prog_correction(program, op_from, op_to)
         if modified_instr:
-            print(f'\tProgram ending conditions:\n\tOriginal instr. to be modified ->'
-                  f'{modified_instr:8}:{program[modified_instr]}, '
-                  f'Accumulator: {accum}')
+            print(f'\tProgram ending conditions:')
+            print(f'\tInstr. to be modified -> {modified_instr:8}:{program[modified_instr]}, Accumulator: {accum}')
             break
